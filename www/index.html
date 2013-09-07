@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="GBK" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.2.css" />
+        <title>CVCE</title>
+    </head>
+    <body>
+        <div data-role="page" id="workarea">
+            <div data-role="header">
+				CVCE
+			</div>
+            <div data-role="content">
+                <div id="card-box">
+                    <div id="card1" class="card hot-btn" data-char-tmpl="BCDFGHJKLMNPRSTVWZbcdfghjklmnprstvwz">
+						<div class="letter">C</div>
+					</div>
+                    <div id="card2" class="card hot-btn" data-char-tmpl="aeiou">
+						<div class="letter">V</div>
+					</div>
+                    <div id="card3" class="card hot-btn" data-char-tmpl="bdfgklmnpstz">
+						<div class="letter">C</div>
+					</div>
+                    <div id="card4" class="card hot-btn" data-char-tmpl="e ">
+						<div class="letter">E</div>
+					</div>
+
+    				<div style="clear:both; height:30px;"></div>
+                </div>
+
+				<div id="btnPlay" data-role="button" class="hot-btn">换一个</div>
+				<!--
+                <audio id="audioPlayer" controls="controls" style="display:none">
+                    <source src="file:///android_asset/www/res/btn.mp3" type="audio/mp3">
+                    不支持音效
+                </audio>
+                -->
+            </div>
+        </div>
+
+        <div id="splash">
+            <div class="warming-up">CVCE 正在启动<br>请稍候……</div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.3.2.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
